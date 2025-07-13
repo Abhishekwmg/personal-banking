@@ -1,0 +1,433 @@
+$primary-color: #000000;
+$primary-font: "Roboto", sans-serif;
+$primary-menu: #252331;
+$primary-text: #fdfdfd;
+$primary-green: rgb(13, 237, 102);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $primary-font;
+    background: #f9f9f9;
+    color: $primary-color;
+    background: url("../images/v904-nunny-012.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    //Login Page
+    .login-container {
+        background-color: $primary-color;
+        width: 100%;
+        height: 100vh;
+        .section-wall {
+            display: flex;
+            .wall-img {
+                margin: 10px;
+                height: 100vh;
+                width: 50%;
+                border-radius: 25px;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+            .wall-form {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .signup {
+                    font-size: 2rem;
+                    color: $primary-text;
+
+                    i {
+                        font-size: 1.6rem;
+                        color: $primary-green;
+                    }
+                }
+                .signup-text {
+                    font-size: 0.8rem;
+                    word-break: break-all;
+                    margin-top: 10px;
+                    font-weight: 200;
+                    color: $primary-text;
+                }
+
+                form {
+                    min-width: 300px;
+
+                    .line-break {
+                        margin: 10px 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+
+                        hr {
+                            width: 100px;
+                            height: 1px;
+                        }
+
+                        span {
+                            color: $primary-text;
+                        }
+                    }
+                    .form-fields {
+                        .password-reset {
+                            margin-top: 15px;
+                            color: $primary-text;
+                            text-align: left !important;
+                            a.reset {
+                                color: blue;
+                                background: none;
+                                border: none;
+                                padding: 0;
+                            }
+                        }
+                        // display: flex;
+                        position: relative;
+                        label {
+                            position: absolute;
+                            color: $primary-text;
+                            font-size: 0.8rem;
+                            font-weight: 100;
+                            background: $primary-color;
+                            top: 20px;
+                            left: 20px;
+                            padding: 0 5px;
+                        }
+                        input[type="text"],
+                        input[type="password"] {
+                            width: 100%;
+                            outline: none;
+                            border-radius: 15px;
+                            border: 1px solid $primary-text;
+                            padding: 15px;
+                            margin-top: 25px;
+                            background: transparent;
+                            color: $primary-text;
+                        }
+                        input[type="text"]:active,
+                        input[type="text"]:focus-visible,
+                        input[type="password"]:active,
+                        input[type="password"]:focus-visible {
+                            background: rgba(255, 255, 255, 0.082);
+                            border: 1px solid $primary-green;
+                        }
+                        a {
+                            margin: 15px 0;
+                            background-color: transparent;
+                            width: 100%;
+                            outline: none;
+                            border: 1px solid $primary-text;
+                            padding: 15px;
+                            text-align: center;
+                            background: $primary-text;
+                            border-radius: 25px;
+                            cursor: pointer;
+                            text-decoration: none;
+                            color: $primary-color;
+                        }
+                    }
+                    .form-fields.fl-btn {
+                        display: flex;
+                        gap: 1rem;
+
+                        a {
+                            background: $primary-menu;
+                            padding: 10px;
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                            color: $primary-text;
+                            border: none;
+                        }
+                    }
+                    .form-fields.reset-pswd {
+                        .reset-btn {
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+
+                    .form-fields.merge-btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 0.2rem;
+
+                        .signup-btn {
+                            width: 50%;
+                            border-top-right-radius: 0;
+                            border-bottom-right-radius: 0;
+                        }
+
+                        .login-btn {
+                            width: 50%;
+                            border-top-left-radius: 0;
+                            border-bottom-left-radius: 0;
+                        }
+                    }
+                }
+                .copyright {
+                    .social-icons {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 1rem;
+                        p {
+                            font-size: 1.2rem;
+                            cursor: pointer;
+                            i {
+                                color: $primary-text;
+                                transition: all 0.2s ease-in-out;
+                                &:hover {
+                                    color: $primary-green;
+                                }
+                            }
+                        }
+                    }
+                    .copy-content {
+                        margin-top: 50px;
+                        font-size: 0.8rem;
+                        color: $primary-text;
+                        font-weight: 500;
+                        letter-spacing: 1px;
+                        a {
+                            text-decoration: none;
+                            color: $primary-green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Main App
+    .main-container {
+        width: 1100px;
+        height: 90vh;
+        margin: 2rem auto;
+        border-radius: 35px;
+        background: rgba(255, 255, 255, 0.33);
+        backdrop-filter: blur(21px);
+        -webkit-backdrop-filter: blur(21px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow:
+            0 8px 32px rgba(0, 0, 0, 0.1),
+            inset 0 1px 0 rgba(255, 255, 255, 0.5),
+            inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+            inset 0 0 36px 18px rgba(255, 255, 255, 1.8);
+        position: relative;
+        overflow: hidden;
+        .atm-container {
+            .first-grid {
+                nav {
+                    ul {
+                        display: flex;
+                        align-items: baseline;
+                        justify-content: space-between;
+                        list-style-type: none;
+
+                        li {
+                            a {
+                                font-size: 2.5rem;
+                                font-weight: 800;
+                                line-height: 1.5;
+                                text-decoration: none;
+                                color: $primary-color;
+                                line-height: 2.5;
+
+                                .fa-leaf {
+                                    color: rgb(13, 237, 102);
+                                }
+                            }
+                            .nav-temp {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-right: 35px;
+                                .nav-temp-one {
+                                    .date {
+                                        font-size: 16px;
+                                        color: #737171;
+                                        margin: 0;
+                                    }
+                                    .temp {
+                                        font-size: 2.5rem;
+                                        margin: 0;
+                                        padding: 0;
+                                        font-weight: 900;
+                                    }
+                                }
+                                .nav-temp-two {
+                                    img {
+                                        width: 80px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .container {
+            width: 925px;
+            border-radius: 35px;
+            margin: 0 auto;
+            .user-details {
+                .user-greet {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    color: $primary-color;
+                    margin-bottom: 8px;
+                    #user {
+                        color: #0ded66;
+                    }
+                }
+                .choose-transaction {
+                    margin: 0;
+                }
+            }
+
+            .top-bar,
+            .bottom-bar {
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                height: 200px;
+                width: 100%;
+                margin-top: 2rem;
+                border-radius: 15px;
+                background-color: $primary-menu;
+                overflow: hidden;
+
+                .split-bar-top {
+                    border-bottom: 1px solid $primary-text;
+                }
+
+                .split-bar-top,
+                .split-bar-bottom {
+                    height: 100px;
+                    display: flex;
+                    .thirty-box {
+                        width: 30%;
+                        .money-btn {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-top: 15px;
+                            gap: 1rem;
+                            a {
+                                width: 35px;
+                                height: 35px;
+                                background: #ffff;
+                                border-radius: 8px;
+                                position: relative;
+                                font-size: 1.1rem;
+                                font-weight: 400;
+                                color: $primary-text;
+
+                                .word-second {
+                                    display: block;
+                                }
+                                text-decoration: none;
+                                i {
+                                    font-size: 1.5rem;
+                                    color: $primary-text;
+                                    position: absolute;
+                                    left: 5px;
+                                    top: 5px;
+                                    color: #252331;
+                                    transition: all 0.2s ease;
+                                }
+                                &:hover {
+                                    i {
+                                        transform: translateY(2px);
+                                        color: $primary-green;
+                                    }
+                                }
+                            }
+
+                            h2 {
+                            }
+                        }
+                    }
+                    .seventy-box {
+                        display: flex;
+                        width: 70%;
+                        background: $primary-text;
+
+                        .menu-card {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-bottom: 1px solid $primary-menu;
+                            border-left: 1px solid $primary-menu;
+                            gap: 1rem;
+                            flex: 1;
+
+                            .menu-btn {
+                                a {
+                                    width: 35px;
+                                    height: 35px;
+                                    background: $primary-menu;
+                                    border-radius: 8px;
+                                    position: relative;
+                                    display: block;
+                                    i {
+                                        font-size: 1.1rem;
+                                        color: $primary-text;
+                                        position: absolute;
+                                        left: 10px;
+                                        top: 10px;
+                                        color: $primary-text;
+                                        transition: all 0.2s ease;
+                                    }
+
+                                    &:hover {
+                                        background: $primary-color;
+                                        i {
+                                            transform: translateY(2px);
+                                            color: $primary-green;
+                                        }
+                                    }
+                                }
+                            }
+                            .menu-text {
+                                .menu-style {
+                                    font-size: 1.1rem;
+                                    font-weight: 600;
+                                    .word-second {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .login-container {
+        .section-wall {
+            .wall-img {
+                display: none;
+            }
+            .wall-form {
+                margin-top: 75px;
+                width: 100%;
+            }
+        }
+    }
+}

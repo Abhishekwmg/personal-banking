@@ -1,0 +1,22 @@
+{
+  "name": "03-atm-interface",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass scss/styles.scss css/styles.css",
+    "watch-css": "sass --watch scss:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.1"
+  },
+  "dependencies": {
+    "@lordicon/element": "^1.11.0",
+    "lottie-web": "^5.13.0"
+  }
+}

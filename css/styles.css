@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #f9f9f9;
+  color: #000000;
+  background: url("../images/v904-nunny-012.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .login-container {
+  background-color: #000000;
+  width: 100%;
+  height: 100vh;
+}
+body .login-container .section-wall {
+  display: flex;
+}
+body .login-container .section-wall .wall-img {
+  margin: 10px;
+  height: 100vh;
+  width: 50%;
+  border-radius: 25px;
+  overflow: hidden;
+}
+body .login-container .section-wall .wall-img img {
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body .login-container .section-wall .wall-form {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body .login-container .section-wall .wall-form .signup {
+  font-size: 2rem;
+  color: #fdfdfd;
+}
+body .login-container .section-wall .wall-form .signup i {
+  font-size: 1.6rem;
+  color: rgb(13, 237, 102);
+}
+body .login-container .section-wall .wall-form .signup-text {
+  font-size: 0.8rem;
+  word-break: break-all;
+  margin-top: 10px;
+  font-weight: 200;
+  color: #fdfdfd;
+}
+body .login-container .section-wall .wall-form form {
+  min-width: 300px;
+}
+body .login-container .section-wall .wall-form form .line-break {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body .login-container .section-wall .wall-form form .line-break hr {
+  width: 100px;
+  height: 1px;
+}
+body .login-container .section-wall .wall-form form .line-break span {
+  color: #fdfdfd;
+}
+body .login-container .section-wall .wall-form form .form-fields {
+  position: relative;
+}
+body .login-container .section-wall .wall-form form .form-fields .password-reset {
+  margin-top: 15px;
+  color: #fdfdfd;
+  text-align: left !important;
+}
+body .login-container .section-wall .wall-form form .form-fields .password-reset a.reset {
+  color: blue;
+  background: none;
+  border: none;
+  padding: 0;
+}
+body .login-container .section-wall .wall-form form .form-fields label {
+  position: absolute;
+  color: #fdfdfd;
+  font-size: 0.8rem;
+  font-weight: 100;
+  background: #000000;
+  top: 20px;
+  left: 20px;
+  padding: 0 5px;
+}
+body .login-container .section-wall .wall-form form .form-fields input[type=text],
+body .login-container .section-wall .wall-form form .form-fields input[type=password] {
+  width: 100%;
+  outline: none;
+  border-radius: 15px;
+  border: 1px solid #fdfdfd;
+  padding: 15px;
+  margin-top: 25px;
+  background: transparent;
+  color: #fdfdfd;
+}
+body .login-container .section-wall .wall-form form .form-fields input[type=text]:active,
+body .login-container .section-wall .wall-form form .form-fields input[type=text]:focus-visible,
+body .login-container .section-wall .wall-form form .form-fields input[type=password]:active,
+body .login-container .section-wall .wall-form form .form-fields input[type=password]:focus-visible {
+  background: rgba(255, 255, 255, 0.082);
+  border: 1px solid rgb(13, 237, 102);
+}
+body .login-container .section-wall .wall-form form .form-fields a {
+  margin: 15px 0;
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: 1px solid #fdfdfd;
+  padding: 15px;
+  text-align: center;
+  background: #fdfdfd;
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+}
+body .login-container .section-wall .wall-form form .form-fields.fl-btn {
+  display: flex;
+  gap: 1rem;
+}
+body .login-container .section-wall .wall-form form .form-fields.fl-btn a {
+  background: #252331;
+  padding: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fdfdfd;
+  border: none;
+}
+body .login-container .section-wall .wall-form form .form-fields.reset-pswd .reset-btn {
+  width: 100%;
+  display: block;
+}
+body .login-container .section-wall .wall-form form .form-fields.merge-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2rem;
+}
+body .login-container .section-wall .wall-form form .form-fields.merge-btn .signup-btn {
+  width: 50%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+body .login-container .section-wall .wall-form form .form-fields.merge-btn .login-btn {
+  width: 50%;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+body .login-container .section-wall .wall-form .copyright .social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+body .login-container .section-wall .wall-form .copyright .social-icons p {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+body .login-container .section-wall .wall-form .copyright .social-icons p i {
+  color: #fdfdfd;
+  transition: all 0.2s ease-in-out;
+}
+body .login-container .section-wall .wall-form .copyright .social-icons p i:hover {
+  color: rgb(13, 237, 102);
+}
+body .login-container .section-wall .wall-form .copyright .copy-content {
+  margin-top: 50px;
+  font-size: 0.8rem;
+  color: #fdfdfd;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+body .login-container .section-wall .wall-form .copyright .copy-content a {
+  text-decoration: none;
+  color: rgb(13, 237, 102);
+}
+body .main-container {
+  width: 1100px;
+  height: 90vh;
+  margin: 2rem auto;
+  border-radius: 35px;
+  background: rgba(255, 255, 255, 0.33);
+  backdrop-filter: blur(21px);
+  -webkit-backdrop-filter: blur(21px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 0 rgba(255, 255, 255, 0.1), inset 0 0 36px 18px rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+}
+body .main-container .atm-container .first-grid nav ul {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  list-style-type: none;
+}
+body .main-container .atm-container .first-grid nav ul li a {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #000000;
+  line-height: 2.5;
+}
+body .main-container .atm-container .first-grid nav ul li a .fa-leaf {
+  color: rgb(13, 237, 102);
+}
+body .main-container .atm-container .first-grid nav ul li .nav-temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 35px;
+}
+body .main-container .atm-container .first-grid nav ul li .nav-temp .nav-temp-one .date {
+  font-size: 16px;
+  color: #737171;
+  margin: 0;
+}
+body .main-container .atm-container .first-grid nav ul li .nav-temp .nav-temp-one .temp {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+}
+body .main-container .atm-container .first-grid nav ul li .nav-temp .nav-temp-two img {
+  width: 80px;
+}
+body .main-container .container {
+  width: 925px;
+  border-radius: 35px;
+  margin: 0 auto;
+}
+body .main-container .container .user-details .user-greet {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 8px;
+}
+body .main-container .container .user-details .user-greet #user {
+  color: #0ded66;
+}
+body .main-container .container .user-details .choose-transaction {
+  margin: 0;
+}
+body .main-container .container .top-bar,
+body .main-container .container .bottom-bar {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 200px;
+  width: 100%;
+  margin-top: 2rem;
+  border-radius: 15px;
+  background-color: #252331;
+  overflow: hidden;
+}
+body .main-container .container .top-bar .split-bar-top,
+body .main-container .container .bottom-bar .split-bar-top {
+  border-bottom: 1px solid #fdfdfd;
+}
+body .main-container .container .top-bar .split-bar-top,
+body .main-container .container .top-bar .split-bar-bottom,
+body .main-container .container .bottom-bar .split-bar-top,
+body .main-container .container .bottom-bar .split-bar-bottom {
+  height: 100px;
+  display: flex;
+}
+body .main-container .container .top-bar .split-bar-top .thirty-box,
+body .main-container .container .top-bar .split-bar-bottom .thirty-box,
+body .main-container .container .bottom-bar .split-bar-top .thirty-box,
+body .main-container .container .bottom-bar .split-bar-bottom .thirty-box {
+  width: 30%;
+}
+body .main-container .container .top-bar .split-bar-top .thirty-box .money-btn,
+body .main-container .container .top-bar .split-bar-bottom .thirty-box .money-btn,
+body .main-container .container .bottom-bar .split-bar-top .thirty-box .money-btn,
+body .main-container .container .bottom-bar .split-bar-bottom .thirty-box .money-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 1rem;
+}
+body .main-container .container .top-bar .split-bar-top .thirty-box .money-btn a,
+body .main-container .container .top-bar .split-bar-bottom .thirty-box .money-btn a,
+body .main-container .container .bottom-bar .split-bar-top .thirty-box .money-btn a,
+body .main-container .container .bottom-bar .split-bar-bottom .thirty-box .money-btn a {
+  width: 35px;
+  height: 35px;
+  background: white;
+  border-radius: 8px;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #fdfdfd;
+  text-decoration: none;
+}
+body .main-container .container .top-bar .split-bar-top .thirty-box .money-btn a .word-second,
+body .main-container .container .top-bar .split-bar-bottom .thirty-box .money-btn a .word-second,
+body .main-container .container .bottom-bar .split-bar-top .thirty-box .money-btn a .word-second,
+body .main-container .container .bottom-bar .split-bar-bottom .thirty-box .money-btn a .word-second {
+  display: block;
+}
+body .main-container .container .top-bar .split-bar-top .thirty-box .money-btn a i,
+body .main-container .container .top-bar .split-bar-bottom .thirty-box .money-btn a i,
+body .main-container .container .bottom-bar .split-bar-top .thirty-box .money-btn a i,
+body .main-container .container .bottom-bar .split-bar-bottom .thirty-box .money-btn a i {
+  font-size: 1.5rem;
+  color: #fdfdfd;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  color: #252331;
+  transition: all 0.2s ease;
+}
+body .main-container .container .top-bar .split-bar-top .thirty-box .money-btn a:hover i,
+body .main-container .container .top-bar .split-bar-bottom .thirty-box .money-btn a:hover i,
+body .main-container .container .bottom-bar .split-bar-top .thirty-box .money-btn a:hover i,
+body .main-container .container .bottom-bar .split-bar-bottom .thirty-box .money-btn a:hover i {
+  transform: translateY(2px);
+  color: rgb(13, 237, 102);
+}
+body .main-container .container .top-bar .split-bar-top .seventy-box,
+body .main-container .container .top-bar .split-bar-bottom .seventy-box,
+body .main-container .container .bottom-bar .split-bar-top .seventy-box,
+body .main-container .container .bottom-bar .split-bar-bottom .seventy-box {
+  display: flex;
+  width: 70%;
+  background: #fdfdfd;
+}
+body .main-container .container .top-bar .split-bar-top .seventy-box .menu-card,
+body .main-container .container .top-bar .split-bar-bottom .seventy-box .menu-card,
+body .main-container .container .bottom-bar .split-bar-top .seventy-box .menu-card,
+body .main-container .container .bottom-bar .split-bar-bottom .seventy-box .menu-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #252331;
+  border-left: 1px solid #252331;
+  gap: 1rem;
+  flex: 1;
+}
+body .main-container .container .top-bar .split-bar-top .seventy-box .menu-card .menu-btn a,
+body .main-container .container .top-bar .split-bar-bottom .seventy-box .menu-card .menu-btn a,
+body .main-container .container .bottom-bar .split-bar-top .seventy-box .menu-card .menu-btn a,
+body .main-container .container .bottom-bar .split-bar-bottom .seventy-box .menu-card .menu-btn a {
+  width: 35px;
+  height: 35px;
+  background: #252331;
+  border-radius: 8px;
+  position: relative;
+  display: block;
+}
+body .main-container .container .top-bar .split-bar-top .seventy-box .menu-card .menu-btn a i,
+body .main-container .container .top-bar .split-bar-bottom .seventy-box .menu-card .menu-btn a i,
+body .main-container .container .bottom-bar .split-bar-top .seventy-box .menu-card .menu-btn a i,
+body .main-container .container .bottom-bar .split-bar-bottom .seventy-box .menu-card .menu-btn a i {
+  font-size: 1.1rem;
+  color: #fdfdfd;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #fdfdfd;
+  transition: all 0.2s ease;
+}
+body .main-container .container .top-bar .split-bar-top .seventy-box .menu-card .menu-btn a:hover,
+body .main-container .container .top-bar .split-bar-bottom .seventy-box .menu-card .menu-btn a:hover,
+body .main-container .container .bottom-bar .split-bar-top .seventy-box .menu-card .menu-btn a:hover,
+body .main-container .container .bottom-bar .split-bar-bottom .seventy-box .menu-card .menu-btn a:hover {
+  background: #000000;
+}
+body .main-container .container .top-bar .split-bar-top .seventy-box .menu-card .menu-btn a:hover i,
+body .main-container .container .top-bar .split-bar-bottom .seventy-box .menu-card .menu-btn a:hover i,
+body .main-container .container .bottom-bar .split-bar-top .seventy-box .menu-card .menu-btn a:hover i,
+body .main-container .container .bottom-bar .split-bar-bottom .seventy-box .menu-card .menu-btn a:hover i {
+  transform: translateY(2px);
+  color: rgb(13, 237, 102);
+}
+body .main-container .container .top-bar .split-bar-top .seventy-box .menu-card .menu-text .menu-style,
+body .main-container .container .top-bar .split-bar-bottom .seventy-box .menu-card .menu-text .menu-style,
+body .main-container .container .bottom-bar .split-bar-top .seventy-box .menu-card .menu-text .menu-style,
+body .main-container .container .bottom-bar .split-bar-bottom .seventy-box .menu-card .menu-text .menu-style {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+body .main-container .container .top-bar .split-bar-top .seventy-box .menu-card .menu-text .menu-style .word-second,
+body .main-container .container .top-bar .split-bar-bottom .seventy-box .menu-card .menu-text .menu-style .word-second,
+body .main-container .container .bottom-bar .split-bar-top .seventy-box .menu-card .menu-text .menu-style .word-second,
+body .main-container .container .bottom-bar .split-bar-bottom .seventy-box .menu-card .menu-text .menu-style .word-second {
+  display: block;
+}
+
+@media only screen and (max-width: 600px) {
+  .login-container .section-wall .wall-img {
+    display: none;
+  }
+  .login-container .section-wall .wall-form {
+    margin-top: 75px;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
