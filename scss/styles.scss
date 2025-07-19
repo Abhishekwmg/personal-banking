@@ -215,7 +215,6 @@ body {
         width: 1100px;
         height: 90vh;
         margin: 2rem auto;
-        border-radius: 35px;
         background: rgba(255, 255, 255, 0.33);
         backdrop-filter: blur(21px);
         -webkit-backdrop-filter: blur(21px);
@@ -326,11 +325,6 @@ body {
                             margin-top: 15px;
                             gap: 1rem;
                             a {
-                                width: 35px;
-                                height: 35px;
-                                background: #ffff;
-                                border-radius: 8px;
-                                position: relative;
                                 font-size: 1.1rem;
                                 font-weight: 400;
                                 color: $primary-text;
@@ -339,19 +333,28 @@ body {
                                     display: block;
                                 }
                                 text-decoration: none;
-                                i {
-                                    font-size: 1.5rem;
-                                    color: $primary-text;
-                                    position: absolute;
-                                    left: 5px;
-                                    top: 5px;
-                                    color: #252331;
-                                    transition: all 0.2s ease;
+                                span.icon {
+                                    width: 35px;
+                                    height: 35px;
+                                    background-color: $primary-text;
+                                    border-radius: 5px;
+                                    display: inline-flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    margin-right: 10px;
+                                    i {
+                                        font-size: 1.5rem;
+                                        color: $primary-color;
+                                        transition: all 0.2s ease;
+                                    }
                                 }
                                 &:hover {
-                                    i {
-                                        transform: translateY(2px);
-                                        color: $primary-green;
+                                    // background: $primary-color;
+                                    &:hover {
+                                        i {
+                                            transform: translateY(2px);
+                                            color: $primary-green;
+                                        }
                                     }
                                 }
                             }

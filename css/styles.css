@@ -192,7 +192,6 @@ body .main-container {
   width: 1100px;
   height: 90vh;
   margin: 2rem auto;
-  border-radius: 35px;
   background: rgba(255, 255, 255, 0.33);
   backdrop-filter: blur(21px);
   -webkit-backdrop-filter: blur(21px);
@@ -297,11 +296,6 @@ body .main-container .container .top-bar .split-bar-top .thirty-box .money-btn a
 body .main-container .container .top-bar .split-bar-bottom .thirty-box .money-btn a,
 body .main-container .container .bottom-bar .split-bar-top .thirty-box .money-btn a,
 body .main-container .container .bottom-bar .split-bar-bottom .thirty-box .money-btn a {
-  width: 35px;
-  height: 35px;
-  background: white;
-  border-radius: 8px;
-  position: relative;
   font-size: 1.1rem;
   font-weight: 400;
   color: #fdfdfd;
@@ -313,22 +307,31 @@ body .main-container .container .bottom-bar .split-bar-top .thirty-box .money-bt
 body .main-container .container .bottom-bar .split-bar-bottom .thirty-box .money-btn a .word-second {
   display: block;
 }
-body .main-container .container .top-bar .split-bar-top .thirty-box .money-btn a i,
-body .main-container .container .top-bar .split-bar-bottom .thirty-box .money-btn a i,
-body .main-container .container .bottom-bar .split-bar-top .thirty-box .money-btn a i,
-body .main-container .container .bottom-bar .split-bar-bottom .thirty-box .money-btn a i {
+body .main-container .container .top-bar .split-bar-top .thirty-box .money-btn a span.icon,
+body .main-container .container .top-bar .split-bar-bottom .thirty-box .money-btn a span.icon,
+body .main-container .container .bottom-bar .split-bar-top .thirty-box .money-btn a span.icon,
+body .main-container .container .bottom-bar .split-bar-bottom .thirty-box .money-btn a span.icon {
+  width: 35px;
+  height: 35px;
+  background-color: #fdfdfd;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+body .main-container .container .top-bar .split-bar-top .thirty-box .money-btn a span.icon i,
+body .main-container .container .top-bar .split-bar-bottom .thirty-box .money-btn a span.icon i,
+body .main-container .container .bottom-bar .split-bar-top .thirty-box .money-btn a span.icon i,
+body .main-container .container .bottom-bar .split-bar-bottom .thirty-box .money-btn a span.icon i {
   font-size: 1.5rem;
-  color: #fdfdfd;
-  position: absolute;
-  left: 5px;
-  top: 5px;
-  color: #252331;
+  color: #000000;
   transition: all 0.2s ease;
 }
-body .main-container .container .top-bar .split-bar-top .thirty-box .money-btn a:hover i,
-body .main-container .container .top-bar .split-bar-bottom .thirty-box .money-btn a:hover i,
-body .main-container .container .bottom-bar .split-bar-top .thirty-box .money-btn a:hover i,
-body .main-container .container .bottom-bar .split-bar-bottom .thirty-box .money-btn a:hover i {
+body .main-container .container .top-bar .split-bar-top .thirty-box .money-btn a:hover:hover i,
+body .main-container .container .top-bar .split-bar-bottom .thirty-box .money-btn a:hover:hover i,
+body .main-container .container .bottom-bar .split-bar-top .thirty-box .money-btn a:hover:hover i,
+body .main-container .container .bottom-bar .split-bar-bottom .thirty-box .money-btn a:hover:hover i {
   transform: translateY(2px);
   color: rgb(13, 237, 102);
 }
