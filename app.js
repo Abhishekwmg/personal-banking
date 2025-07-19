@@ -55,7 +55,7 @@ updateCurrBalance()
 }
 */
 
-const selectors = {
+const s = {
   signUpUsername: document.getElementById("sign-up-username"),
   signUpEmail: document.getElementById("sign-up-email"),
   signUpPassword: document.getElementById("sign-up-password"),
@@ -65,5 +65,52 @@ const selectors = {
   loginUsername: document.getElementById("login-username"),
   loginPassword: document.getElementById("login-password"),
   loginPasswordReset: document.getElementById("login-pswd-reset"),
-  loginPasswordReset: document.getElementById("reset-username"),
 };
+
+// const user1 = new BankCust("John Smith", "john@email.com", 123123, 1212);
+
+//validating user inputs
+
+const bankUserData = [];
+
+class BankCust {
+  constructor(signUsername, signEmail, signPassword, signPin) {
+    this.signUsername = signUsername;
+    this.signEmail = signEmail;
+    this.signPassword = signPassword;
+    this.signPin = signPin;
+    // this.ID = ID;
+  }
+}
+
+s.signUpMainBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  let bankUserName = s.signUpUsername.value;
+  let bankEmail = s.signUpEmail.value;
+  let bankPassword = s.signUpPassword.value;
+  let bankPin = s.signUpPin.value;
+
+  if (validateInputs(bankUserName, bankEmail, bankPassword, bankPin)) {
+    // addUser(bankUserName, bankEmail, bankPassword, bankPin);
+    const newUser = new BankCust(
+      bankUserName,
+      bankEmail,
+      bankPassword,
+      bankPin
+    );
+
+    bankUserData.push(newUser);
+  }
+});
+
+console.log(bankUserData);
+
+function validateInputs(name, email, password, pin) {
+  let isValid = true;
+  if (!name || !email || !password || !pin) {
+    isValid = false;
+  }
+
+  return isValid;
+}
